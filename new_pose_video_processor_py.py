@@ -282,22 +282,5 @@ for file in os.listdir('.'):
         size = os.path.getsize(file)
         print(f"  {file}: {size} bytes")
 
-# Commented out IPython magic to ensure Python compatibility.
-# Install git if not already installed
-!apt-get install git -y
-
-# Clone your repo
-!git clone https://github.com/USERNAME/REPO.git
-# %cd REPO
-
-# Move your script into the repo folder
-!mv /content/pose_video_processor.py .
-
-# Commit and push to GitHub
-!git config --global user.email "you@example.com"
-!git config --global user.name "Your Name"
-!git add pose_video_processor.py
-!git commit -m "Add pose video processor script"
-!git push
 
 !wget -q https://raw.githubusercontent.com/USERNAME/REPO/main/pose_video_processor.py -O script.py && python script.py
