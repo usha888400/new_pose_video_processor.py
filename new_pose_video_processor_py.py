@@ -283,4 +283,3 @@ for file in os.listdir('.'):
         print(f"  {file}: {size} bytes")
 
 
-!wget -q https://raw.githubusercontent.com/USERNAME/REPO/main/pose_video_processor.py -O script.py && python script.py
